@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@font-face {
+  font-family: "MuseoSans-300";
+  src: url("./fonts/MuseoSans-300.otf");
+}
+
+@font-face {
+  font-family: "MuseoSans-500";
+  src: url("./fonts/MuseoSans-500.otf");
+}
+
+@font-face {
+  font-family: "MuseoSans-700";
+  src: url("./fonts/MuseoSans-700.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next reg";
+  src: url("./fonts/avenir-next-regular.woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next medium";
+  src: url("./fonts/avenir-next-medium.woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next bold";
+  src: url("./fonts/avenir-next-bold.woff2");
+}
+
+@font-face {
+  font-family: "Sharp Sans bold";
+  src: url("./fonts/SharpSansNo1-Bold.otf");
+}
+
+@font-face {
+  font-family: "Bariol";
+  src: url("./fonts/bariol_regular-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Anurati";
+  src: url("./fonts/Anurati-Regular.otf");
+}
+
+@media only screen and (min-width: 768px) {
+  .vertical-center {
+    padding-top: 30vw;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: #FFF;
+}
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #313033;
+}
+
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.video-container .filter {
+  z-index: 1;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+.video-annotation-layer {
+  width: 100%;
+  height: 100%;
+}
+
+#video-annotation-1 {
+  z-index: 2;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+}
+
+/*
+#video-annotation-2 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  color: blue;
+  background-color: white;
+  font-size: 40px;
+  text-align: center;
+}*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sharp Sans bold' !important;
+}
+
+.title {
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 2;
+  text-align: left;
+}
+
+.title #clean {
+  -webkit-text-fill-color: #F5F5F5;
+  font-family: "MuseoSans-700";
+}
+
+.title #main {
+  color: #FCF7FF;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  padding-left: 10vw;
+  font-family: "Sharp Sans bold";
+}
+
+.title #typinghero {
+  color: #C7C6CA;
+  padding-left: 10vw;
+  font-family: "MuseoSans-500";
+}
+
+.vertical-center {
+  padding-top: 20vh;
+}
+
+.gradient {
+  margin-bottom: -10px;
+  background: linear-gradient(291deg, #434343, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: bottomgradient 30s ease infinite;
+  animation: bottomgradient 30s ease infinite;
+}
+
+@-webkit-keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+.gradient .container {
+  color: #f0ebf4;
+}
+
+.page-footer {
+  color: #f0ebf4;
+  background: linear-gradient(291deg, #434343, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: bottomgradient 30s ease infinite;
+  animation: bottomgradient 30s ease infinite;
+}
+
+@-webkit-keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+.portfolio-block {
+  font-family: 'MuseoSans-300';
+}
+
+.portfolio-block .h1 {
+  font-family: 'Sharp Sans bold';
+}
+
+.alt-grad {
+  font-family: 'MuseoSans-300';
+  background: linear-gradient(291deg, #F7EBFF, #00C8A0);
+  background-size: 400% 400%;
+  -webkit-animation: alt-grad 30s ease infinite;
+  animation: alt-grad 30s ease infinite;
+}
+
+@-webkit-keyframes alt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes alt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+.nalt-grad {
+  font-family: 'MuseoSans-300';
+  background: linear-gradient(291deg, #F7EBFF, #B597FF);
+  background-size: 400% 400%;
+  -webkit-animation: nalt-grad 30s ease infinite;
+  animation: nalt-grad 30s ease infinite;
+}
+
+@-webkit-keyframes nalt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes nalt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+.fab{
+  color: #F5F5F5;
+  font-size: 1.7rem;
+}
+
+.icons{
+  font-size: 18px;
+  margin: 0 3px;
+  width: 36px;
+  display: inline-block;
+  height: 36px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.social-icon{
+  padding-top: 1rem;
+}
+
+.copyright{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.copyright p{
+  color: #C7C6CA;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
